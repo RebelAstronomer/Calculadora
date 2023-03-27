@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <header class="herder">
+        <div class="herder-name">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="btn-dark-mode">
+            <img src="/img/dark_mode_icon.svg" alt="dark_mode" onclick="changeTheme()">
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="numberInput">
+        </div>
+        <div class="btn-container">
+            <button onclick="clearInput()" class="btn clear">C</button>
+            <button onclick="deletInput()" class="btn operator">Del</button>
+            <button onclick="addToInput(this)" class="btn operator">/</button>
+            <button onclick="addToInput(this)" class="btn operator">*</button>
+            <button onclick="addToInput(this)" class="btn operator">-</button>
+            <button onclick="addToInput(this)" class="btn number">7</button>
+            <button onclick="addToInput(this)" class="btn number">8</button>
+            <button onclick="addToInput(this)" class="btn number">9</button>
+            <button onclick="addToInput(this)" class="btn operator">+</button>
+            <button onclick="addToInput(this)" class="btn number">4</button>
+            <button onclick="addToInput(this)" class="btn number">5</button>
+            <button onclick="addToInput(this)" class="btn number">6</button>
+            <button onclick="addToInput(this)" class="btn operator">.</button>
+            <button onclick="addToInput(this)" class="btn number">1</button>
+            <button onclick="addToInput(this)" class="btn number">2</button>
+            <button onclick="addToInput(this)" class="btn number">3</button>
+            <button onclick="calculate()" class="btn operator">=</button>
+            <button onclick="addToInput(this)" class="btn operator">,</button>
+            <button onclick="addToInput(this)" class="btn number">0</button>
+            <button onclick="addToInput(this)" class="btn operator">%</button>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div>Criada por <a href="https://github.com/RebelAstronomer">Nicolas Gomes</a></div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
